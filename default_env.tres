@@ -1,0 +1,27 @@
+[gd_resource type="Environment" load_steps=3 format=2]
+
+[ext_resource path="res://skybox.hdr" type="Texture" id=1]
+
+[sub_resource type="PanoramaSky" id=1]
+panorama = ExtResource( 1 )
+
+[resource]
+background_mode = 3
+background_sky = SubResource( 1 )
+background_color = Color( 0.458824, 0.313726, 0.211765, 1 )
+ambient_light_color = Color( 1, 1, 1, 1 )
+ambient_light_energy = 0.0
+ambient_light_sky_contribution = 0.0
+fog_color = Color( 1, 0.815686, 0.443137, 1 )
+fog_depth_begin = 30.0
+tonemap_mode = 3
+auto_exposure_enabled = true
+ssao_enabled = true
+dof_blur_far_distance = 97.0
+dof_blur_far_transition = 10.0
+dof_blur_far_amount = 0.3
+dof_blur_near_distance = 88.02
+dof_blur_near_transition = 486.44
+dof_blur_near_amount = 0.05
+adjustment_enabled = true
+adjustment_saturation = 1.1
